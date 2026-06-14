@@ -40,6 +40,12 @@
   50% { transform: translate(-50%, -50%) scale(0.9); }
 }
 
+@keyframes indeterminate {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(200%); }
+  100% { transform: translateX(-100%); }
+}
+
 /* View Transitions for theme toggle */
 ::view-transition-old(root),
 ::view-transition-new(root) {

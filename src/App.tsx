@@ -8,6 +8,7 @@ import { EmptyState } from './popup/components/EmptyState'
 import { ErrorState } from './popup/components/ErrorState'
 import { Onboarding } from './popup/components/Onboarding'
 import { SettingsPanel } from './popup/components/SettingsPanel'
+import { SyncProgress } from './popup/components/SyncProgress'
 import { Ripple } from './popup/components/Ripple'
 import { CATEGORY_PRIORITY } from './lib/constants'
 import { dbg } from './lib/debug'
@@ -32,6 +33,7 @@ export default function App() {
 
   const { theme, toggle: toggleTheme } = useTheme()
   const [showSettings, setShowSettings] = useState(false)
+  const [initialSyncing, setInitialSyncing] = useState(false)
 
   dbg('App.render', {
     initialLoading,
@@ -47,6 +49,15 @@ export default function App() {
       <div className="w-[380px] h-[360px] relative overflow-hidden flex flex-col items-center justify-center" style={{ background: 'var(--bg)' }}>
         <Ripple mainCircleSize={100} numCircles={7} mainCircleOpacity={0.2} />
         <p className="relative text-[12px]" style={{ color: 'var(--fg-3)' }}>Scanning your inbox...</p>
+      </div>
+    )
+  }
+
+  // Initial sync in progress — show progress screen
+  if (initialSyncing) {
+    return (
+      <div className="w-[380px]" style={{ background: 'var(--bg)' }}>
+        <SyncProgress onDone={() => { setInitialSyncing(false); loadData() }} />
       </div>
     )
   }
@@ -67,7 +78,7 @@ export default function App() {
     })
     return (
       <div className="w-[380px]" style={{ background: 'var(--bg)' }}>
-        <Onboarding onConnected={loadData} />
+        <Onboarding onConnected={() => { setInitialSyncing(true); loadData() }} />
       </div>
     )
   }

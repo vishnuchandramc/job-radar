@@ -5,6 +5,15 @@ import { dbg, dbgError } from './debug'
 
 const GMAIL_API = 'https://www.googleapis.com/gmail/v1/users/me'
 
+function broadcastProgress(step: string, processed?: number, total?: number) {
+  chrome.runtime.sendMessage({
+    type: 'SYNC_PROGRESS',
+    step,
+    processed,
+    total,
+  }).catch(() => {}) // popup might be closed
+}
+
 async function getAuthToken(): Promise<string> {
   dbg('gmail.getAuthToken (interactive=false) — requesting')
   const result = await chrome.identity.getAuthToken({ interactive: false })
@@ -130,9 +139,10 @@ export async function fetchMessagesByDate(afterDays: number): Promise<JobEmail[]
 
   const messageIds: GmailMessage[] = []
   let pageToken: string | undefined
-  const MAX_MESSAGES = 200 // Cap to avoid excessive API calls
 
-  // Paginate through message list (capped)
+  broadcastProgress('Searching your inbox...')
+
+  // Paginate through message list
   do {
     const params = new URLSearchParams({ q: query, maxResults: '100' })
     if (pageToken) params.set('pageToken', pageToken)
@@ -144,15 +154,17 @@ export async function fetchMessagesByDate(afterDays: number): Promise<JobEmail[]
       messageIds.push(...data.messages)
     }
     pageToken = data.nextPageToken
-  } while (pageToken && messageIds.length < MAX_MESSAGES)
+  } while (pageToken)
 
-  // Trim to cap
-  const capped = messageIds.slice(0, MAX_MESSAGES)
-  console.log('[Job Radar] Found', messageIds.length, 'messages, processing', capped.length)
+  console.log('[Job Radar] Found', messageIds.length, 'messages')
+
+  broadcastProgress(`Found ${messageIds.length} emails, extracting details...`)
 
   // Fetch details for each message
-  const emails = await fetchMessageDetails(capped, token)
+  const emails = await fetchMessageDetails(messageIds, token)
   console.log('[Job Radar] Classified', emails.length, 'as job emails')
+
+  broadcastProgress(`Classified ${emails.length} job emails`)
   return emails
 }
 
@@ -237,6 +249,7 @@ async function fetchMessageDetails(
 
   // Batch in groups of 20 to avoid overwhelming the API
   for (let i = 0; i < messages.length; i += 20) {
+    broadcastProgress('Parsing emails...', Math.min(i + 20, messages.length), messages.length)
     const batch = messages.slice(i, i + 20)
     const details = await Promise.all(
       batch.map(async (msg) => {

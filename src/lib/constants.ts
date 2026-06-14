@@ -82,8 +82,8 @@ export const DEFAULT_SETTINGS: Settings = {
 }
 
 export const ACTIVE_WINDOW_DAYS = 7
-export const STORAGE_RETENTION_DAYS = 90
-export const BACKFILL_DAYS = 90
+export const STORAGE_RETENTION_DAYS = 30
+export const BACKFILL_DAYS = 7
 export const ALARM_NAME = 'job-radar-sync'
 
 // Categories that count toward the badge
