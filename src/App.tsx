@@ -10,6 +10,7 @@ import { Onboarding } from './popup/components/Onboarding'
 import { SettingsPanel } from './popup/components/SettingsPanel'
 import { Ripple } from './popup/components/Ripple'
 import { CATEGORY_PRIORITY } from './lib/constants'
+import { dbg } from './lib/debug'
 
 export default function App() {
   const {
@@ -32,6 +33,14 @@ export default function App() {
   const { theme, toggle: toggleTheme } = useTheme()
   const [showSettings, setShowSettings] = useState(false)
 
+  dbg('App.render', {
+    initialLoading,
+    userEmail,
+    connectionState,
+    showSettings,
+    activeEmailCount: activeEmails.length,
+  })
+
   // Loading
   if (initialLoading) {
     return (
@@ -45,12 +54,17 @@ export default function App() {
   // Not connected
   if (!userEmail || connectionState === 'disconnected') {
     if (connectionState === 'disconnected' && userEmail) {
+      dbg('App.render — branch: ErrorState (disconnected but has email)')
       return (
         <div className="w-[380px]" style={{ background: 'var(--bg)' }}>
           <ErrorState onReconnect={() => { setConnectionState('connected'); loadData() }} />
         </div>
       )
     }
+    dbg('App.render — branch: Onboarding (no userEmail or disconnected)', {
+      userEmail,
+      connectionState,
+    })
     return (
       <div className="w-[380px]" style={{ background: 'var(--bg)' }}>
         <Onboarding onConnected={loadData} />

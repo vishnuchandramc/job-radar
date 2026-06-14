@@ -11,6 +11,7 @@ import {
 } from '../../lib/storage'
 import { ACTIVE_WINDOW_DAYS } from '../../lib/constants'
 import { buildGmailLink } from '../../lib/utils'
+import { dbg, dbgError } from '../../lib/debug'
 
 export function useStorage() {
   const [emails, setEmails] = useState<JobEmail[]>([])
@@ -21,6 +22,7 @@ export function useStorage() {
   const [initialLoading, setInitialLoading] = useState(true)
 
   const loadData = useCallback(async () => {
+    dbg('useStorage.loadData — start')
     try {
       const [emailData, settingsData, emailAddr] = await Promise.all([
         getEmails(),
@@ -28,15 +30,27 @@ export function useStorage() {
         getUserEmail(),
       ])
 
+      dbg('useStorage.loadData — loaded', {
+        jobEmailCount: emailData.length,
+        userEmail: emailAddr,
+        syncInterval: settingsData.syncIntervalMinutes,
+      })
+
       setEmails(emailData)
 
       setSettings(settingsData)
       setUserEmail(emailAddr)
       setConnectionState(emailAddr ? 'connected' : 'disconnected')
-    } catch {
+      dbg('useStorage.loadData — state set', {
+        userEmail: emailAddr,
+        connectionState: emailAddr ? 'connected' : 'disconnected',
+      })
+    } catch (error) {
+      dbgError('useStorage.loadData — failed', error)
       setConnectionState('disconnected')
     } finally {
       setInitialLoading(false)
+      dbg('useStorage.loadData — done', { initialLoading: false })
     }
   }, [])
 

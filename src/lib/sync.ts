@@ -11,6 +11,7 @@ import {
 } from './storage'
 import { updateBadge } from './badge'
 import { BACKFILL_DAYS, ACTIVE_WINDOW_DAYS } from './constants'
+import { dbg, dbgError } from './debug'
 
 export interface SyncResult {
   success: boolean
@@ -19,6 +20,7 @@ export interface SyncResult {
 }
 
 export async function performSync(): Promise<SyncResult> {
+  dbg('sync.performSync — start')
   try {
     const syncState = await getSyncState()
 
@@ -48,9 +50,12 @@ export async function performSync(): Promise<SyncResult> {
     await purgeOldEmails(ACTIVE_WINDOW_DAYS)
     await updateBadge('connected')
 
-    return { success: true, newEmailCount: newEmails.length }
+    const result = { success: true, newEmailCount: newEmails.length }
+    dbg('sync.performSync — success', result)
+    return result
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Unknown error'
+    dbgError('sync.performSync — failed', { message, error })
 
     if (message === 'AUTH_REVOKED') {
       await updateBadge('disconnected')

@@ -48,12 +48,10 @@ export function CategoryCard({ category, emails, onClickEmail, onDismiss }: Cate
         <span className="text-[13px] flex-1 text-left" style={{ color: 'var(--fg)' }}>
           {getCategoryLabel(category)}
         </span>
-        {unseenCount > 0 && (
-          <span className="text-[11px] font-medium tabular-nums" style={{ color: 'var(--accent)' }}>
-            {unseenCount}
-          </span>
-        )}
-        <span className="text-[11px] tabular-nums" style={{ color: 'var(--fg-3)' }}>
+        <span
+          className="text-[11px] font-medium tabular-nums"
+          style={{ color: unseenCount > 0 ? 'var(--accent)' : 'var(--fg-3)' }}
+        >
           {count}
         </span>
         <ChevronRight

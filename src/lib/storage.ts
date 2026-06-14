@@ -1,5 +1,6 @@
 import type { JobEmail, StorageData, Settings } from '../types'
 import { DEFAULT_SETTINGS, STORAGE_RETENTION_DAYS } from './constants'
+import { dbg } from './debug'
 
 const DEFAULT_STORAGE: StorageData = {
   emails: [],
@@ -12,7 +13,13 @@ const DEFAULT_STORAGE: StorageData = {
 export async function getStorageData(): Promise<StorageData> {
   const keys = Object.keys(DEFAULT_STORAGE)
   const data = await chrome.storage.local.get(keys)
-  return { ...DEFAULT_STORAGE, ...data } as StorageData
+  const merged = { ...DEFAULT_STORAGE, ...data } as StorageData
+  dbg('storage.getStorageData', {
+    userEmail: merged.userEmail,
+    emailCount: merged.emails.length,
+    hasHistoryId: !!merged.syncState.historyId,
+  })
+  return merged
 }
 
 export async function getEmails(): Promise<JobEmail[]> {
@@ -87,11 +94,15 @@ export async function saveSyncState(historyId: string | null): Promise<void> {
 
 export async function getUserEmail(): Promise<string | null> {
   const { userEmail } = await getStorageData()
+  dbg('storage.getUserEmail', { userEmail })
   return userEmail
 }
 
 export async function saveUserEmail(email: string): Promise<void> {
+  dbg('storage.saveUserEmail (before)', { email, type: typeof email })
   await chrome.storage.local.set({ userEmail: email })
+  const verify = await chrome.storage.local.get('userEmail')
+  dbg('storage.saveUserEmail (verify read-back)', verify)
 }
 
 export async function clearUserData(): Promise<void> {

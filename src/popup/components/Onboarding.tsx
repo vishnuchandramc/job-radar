@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Radio } from 'lucide-react'
 import { getAuthTokenInteractive, getUserProfile } from '../../lib/gmail'
 import { saveUserEmail } from '../../lib/storage'
+import { dbg, dbgError } from '../../lib/debug'
 import { Ripple } from './Ripple'
 
 interface OnboardingProps {
@@ -15,13 +16,22 @@ export function Onboarding({ onConnected }: OnboardingProps) {
   const handleConnect = async () => {
     setConnecting(true)
     setError(null)
+    dbg('onboarding.handleConnect — start')
     try {
-      await getAuthTokenInteractive()
-      const email = await getUserProfile()
+      const token = await getAuthTokenInteractive()
+      dbg('onboarding.handleConnect — got interactive token', { tokenLength: token.length })
+
+      const email = await getUserProfile(token)
+      dbg('onboarding.handleConnect — got profile email', { email })
+
       await saveUserEmail(email)
+      dbg('onboarding.handleConnect — saved user email')
+
       chrome.runtime.sendMessage({ type: 'INITIAL_SYNC' })
+      dbg('onboarding.handleConnect — sent INITIAL_SYNC')
       onConnected()
-    } catch {
+    } catch (error) {
+      dbgError('onboarding.handleConnect — failed', error)
       setError('Could not connect to Gmail. Please try again.')
       setConnecting(false)
     }

@@ -12,7 +12,7 @@
   "oauth2": {
     "client_id": "907975678641-v750gm916a85bqv09gd7v4at2fp9m2r4.apps.googleusercontent.com",
     "scopes": [
-      "https://www.googleapis.com/auth/gmail.metadata"
+      "https://www.googleapis.com/auth/gmail.readonly"
     ]
   },
   "background": {

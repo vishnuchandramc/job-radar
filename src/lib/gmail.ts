@@ -1,11 +1,17 @@
 import type { JobEmail } from '../types'
 import { classifyEmail } from './classifier'
 import { getSettings } from './storage'
+import { dbg, dbgError } from './debug'
 
 const GMAIL_API = 'https://www.googleapis.com/gmail/v1/users/me'
 
 async function getAuthToken(): Promise<string> {
+  dbg('gmail.getAuthToken (interactive=false) — requesting')
   const result = await chrome.identity.getAuthToken({ interactive: false })
+  dbg('gmail.getAuthToken (interactive=false) — result', {
+    hasToken: !!result.token,
+    tokenLength: result.token?.length ?? 0,
+  })
   if (!result.token) {
     throw new Error('No auth token')
   }
@@ -13,7 +19,12 @@ async function getAuthToken(): Promise<string> {
 }
 
 export async function getAuthTokenInteractive(): Promise<string> {
+  dbg('gmail.getAuthTokenInteractive — requesting')
   const result = await chrome.identity.getAuthToken({ interactive: true })
+  dbg('gmail.getAuthTokenInteractive — result', {
+    hasToken: !!result.token,
+    tokenLength: result.token?.length ?? 0,
+  })
   if (!result.token) {
     throw new Error('No auth token')
   }
@@ -30,48 +41,64 @@ export async function revokeAuthToken(): Promise<void> {
 }
 
 async function gmailFetch(endpoint: string, token: string): Promise<Response> {
+  dbg('gmail.gmailFetch', { endpoint })
   const response = await fetch(`${GMAIL_API}${endpoint}`, {
     headers: { Authorization: `Bearer ${token}` },
   })
+  dbg('gmail.gmailFetch — response', { endpoint, status: response.status, ok: response.ok })
   if (response.status === 401) {
     // Token expired or revoked
     chrome.identity.removeCachedAuthToken({ token })
     throw new Error('AUTH_REVOKED')
   }
   if (!response.ok) {
+    const body = await response.text().catch(() => '')
+    dbgError('gmail.gmailFetch — error body', { endpoint, status: response.status, body })
     throw new Error(`Gmail API error: ${response.status}`)
   }
   return response
 }
 
-// Job-related search keywords for Gmail query (high-signal terms)
-const JOB_SEARCH_KEYWORDS = [
+// Full-text search terms (gmail.readonly scope allows body search)
+const JOB_SEARCH_TERMS = [
   '"interview invitation"',
   '"phone screen"',
-  '"technical assessment"',
-  '"coding challenge"',
   '"offer letter"',
-  '"pleased to offer"',
-  '"compensation package"',
-  '"received your application"',
   '"thank you for applying"',
-  '"application submitted"',
+  '"received your application"',
+  '"application status"',
   '"not moving forward"',
-  '"other candidates"',
   '"position has been filled"',
-  '"next steps in the process"',
+  '"coding challenge"',
+  '"technical assessment"',
+  '"hiring manager"',
+  '"compensation package"',
+  '"we regret"',
   '"schedule an interview"',
-  '"meet the team"',
-  '"virtual onsite"',
+  '"pleased to inform"',
+  '"next round"',
+]
+
+// ATS domains as fallback to catch emails that might not have keyword matches
+const ATS_DOMAINS = [
+  'greenhouse.io',
+  'lever.co',
+  'myworkday.com',
+  'smartrecruiters.com',
+  'ashbyhq.com',
+  'icims.com',
+  'linkedin.com',
+  'jobvite.com',
+  'workable.com',
+  'hired.com',
+  'wellfound.com',
 ]
 
 function buildJobQuery(customDomains: string[]): string {
-  const keywordPart = JOB_SEARCH_KEYWORDS.join(' OR ')
-  if (customDomains.length > 0) {
-    const domainPart = customDomains.map((d) => `from:${d}`).join(' OR ')
-    return `(${keywordPart} OR ${domainPart})`
-  }
-  return `(${keywordPart})`
+  const keywordPart = JOB_SEARCH_TERMS.join(' OR ')
+  const allDomains = [...ATS_DOMAINS, ...customDomains]
+  const domainPart = allDomains.map((d) => `from:${d}`).join(' OR ')
+  return `(${keywordPart} OR ${domainPart})`
 }
 
 interface GmailMessage {
@@ -99,11 +126,13 @@ export async function fetchMessagesByDate(afterDays: number): Promise<JobEmail[]
   const dateStr = `${afterDate.getFullYear()}/${afterDate.getMonth() + 1}/${afterDate.getDate()}`
   const jobQuery = buildJobQuery(settings.customDomains)
   const query = `${jobQuery} after:${dateStr}`
+  console.log('[Job Radar] Gmail query:', query)
 
   const messageIds: GmailMessage[] = []
   let pageToken: string | undefined
+  const MAX_MESSAGES = 200 // Cap to avoid excessive API calls
 
-  // Paginate through message list
+  // Paginate through message list (capped)
   do {
     const params = new URLSearchParams({ q: query, maxResults: '100' })
     if (pageToken) params.set('pageToken', pageToken)
@@ -115,10 +144,16 @@ export async function fetchMessagesByDate(afterDays: number): Promise<JobEmail[]
       messageIds.push(...data.messages)
     }
     pageToken = data.nextPageToken
-  } while (pageToken)
+  } while (pageToken && messageIds.length < MAX_MESSAGES)
+
+  // Trim to cap
+  const capped = messageIds.slice(0, MAX_MESSAGES)
+  console.log('[Job Radar] Found', messageIds.length, 'messages, processing', capped.length)
 
   // Fetch details for each message
-  return fetchMessageDetails(messageIds, token)
+  const emails = await fetchMessageDetails(capped, token)
+  console.log('[Job Radar] Classified', emails.length, 'as job emails')
+  return emails
 }
 
 /**
@@ -178,10 +213,19 @@ export async function getProfileHistoryId(): Promise<string> {
 /**
  * Get the authenticated user's email address.
  */
-export async function getUserProfile(): Promise<string> {
-  const token = await getAuthToken()
+export async function getUserProfile(tokenOverride?: string): Promise<string> {
+  const token = tokenOverride ?? (await getAuthToken())
+  dbg('gmail.getUserProfile', { usingOverrideToken: !!tokenOverride })
   const response = await gmailFetch('/profile', token)
   const data = await response.json()
+  dbg('gmail.getUserProfile — profile data', {
+    emailAddress: data.emailAddress,
+    historyId: data.historyId,
+    messagesTotal: data.messagesTotal,
+  })
+  if (!data.emailAddress) {
+    throw new Error('Gmail profile missing emailAddress')
+  }
   return data.emailAddress
 }
 

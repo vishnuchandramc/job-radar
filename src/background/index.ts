@@ -2,6 +2,7 @@ import { performSync } from '../lib/sync'
 import { getSettings, saveSyncState } from '../lib/storage'
 import { updateBadge } from '../lib/badge'
 import { ALARM_NAME } from '../lib/constants'
+import { dbg, dbgError } from '../lib/debug'
 
 // Set up alarm on install
 chrome.runtime.onInstalled.addListener(async () => {
@@ -20,8 +21,15 @@ chrome.alarms.onAlarm.addListener(async (alarm) => {
 
 // Handle messages from popup
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
+  dbg('background.onMessage', { type: message.type })
+
   if (message.type === 'SYNC_NOW') {
-    performSync().then(sendResponse)
+    performSync()
+      .then((result) => {
+        dbg('background.SYNC_NOW — done', result)
+        sendResponse(result)
+      })
+      .catch((error) => dbgError('background.SYNC_NOW — failed', error))
     return true // keep channel open for async response
   }
 
@@ -39,7 +47,12 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
 
   if (message.type === 'INITIAL_SYNC') {
     // First-time sync after OAuth
-    performSync().then(sendResponse)
+    performSync()
+      .then((result) => {
+        dbg('background.INITIAL_SYNC — done', result)
+        sendResponse(result)
+      })
+      .catch((error) => dbgError('background.INITIAL_SYNC — failed', error))
     return true
   }
 
