@@ -3,39 +3,50 @@ import React, { type HTMLAttributes } from "react"
 interface WarpBackgroundProps extends HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
   perspective?: number
-  beamSize?: number
+  gridSize?: number
   gridColor?: string
 }
 
 export const WarpBackground: React.FC<WarpBackgroundProps> = ({
   children,
-  perspective = 100,
+  perspective = 200,
   className = "",
-  beamSize = 5,
+  gridSize = 40,
   gridColor = "var(--divider)",
   ...props
 }) => {
-  const gridBg = `linear-gradient(${gridColor} 0 1px,transparent 1px ${beamSize}%) 50% -0.5px / ${beamSize}% ${beamSize}%,linear-gradient(90deg,${gridColor} 0 1px,transparent 1px ${beamSize}%) 50% 50% / ${beamSize}% ${beamSize}%`
-
-  const sideStyle: React.CSSProperties = {
-    backgroundSize: `${beamSize}% ${beamSize}%`,
-    background: gridBg,
-  }
+  const gridBg = [
+    `linear-gradient(${gridColor} 1px, transparent 1px)`,
+    `linear-gradient(90deg, ${gridColor} 1px, transparent 1px)`,
+  ].join(", ")
 
   return (
-    <div className={`relative ${className}`} {...props}>
+    <div className={`relative overflow-hidden ${className}`} {...props}>
       <div
-        style={{ perspective: `${perspective}px`, transformStyle: "preserve-3d" }}
-        className="pointer-events-none absolute top-0 left-0 w-full h-full overflow-hidden"
+        className="pointer-events-none absolute inset-0"
+        style={{ perspective: `${perspective}px` }}
       >
-        {/* top */}
-        <div className="absolute w-full origin-[50%_0%]" style={{ ...sideStyle, height: "400px", transform: "rotateX(-90deg)", transformStyle: "preserve-3d" }} />
-        {/* bottom */}
-        <div className="absolute w-full origin-[50%_0%]" style={{ ...sideStyle, height: "400px", top: "100%", transform: "rotateX(-90deg)", transformStyle: "preserve-3d" }} />
-        {/* left */}
-        <div className="absolute top-0 left-0 origin-[0%_0%]" style={{ ...sideStyle, height: "400px", width: "100%", transform: "rotate(90deg) rotateX(-90deg)", transformStyle: "preserve-3d" }} />
-        {/* right */}
-        <div className="absolute top-0 right-0 origin-[100%_0%]" style={{ ...sideStyle, height: "400px", width: "100%", transform: "rotate(-90deg) rotateX(-90deg)", transformStyle: "preserve-3d" }} />
+        {/* Floor grid */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            left: "-50%",
+            width: "200%",
+            height: "200%",
+            transformOrigin: "bottom center",
+            transform: "rotateX(60deg)",
+            background: gridBg,
+            backgroundSize: `${gridSize}px ${gridSize}px`,
+          }}
+        />
+        {/* Fade overlay */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `radial-gradient(ellipse at 50% 70%, transparent 20%, var(--bg) 70%)`,
+          }}
+        />
       </div>
       <div className="relative">{children}</div>
     </div>

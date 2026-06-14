@@ -32,9 +32,8 @@ export default function App() {
   const { theme, toggle: toggleTheme } = useTheme()
   const [showSettings, setShowSettings] = useState(false)
 
-  // Loading — hardcoded for testing
-  const forceLoader = true
-  if (initialLoading || forceLoader) {
+  // Loading
+  if (initialLoading) {
     return (
       <div className="w-[380px] h-[360px] relative overflow-hidden flex flex-col items-center justify-center" style={{ background: 'var(--bg)' }}>
         <Ripple mainCircleSize={100} numCircles={7} mainCircleOpacity={0.2} />

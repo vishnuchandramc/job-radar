@@ -1,5 +1,4 @@
 import type { JobEmail } from '../types'
-import { ATS_DOMAINS } from './constants'
 import { classifyEmail } from './classifier'
 import { getSettings } from './storage'
 
@@ -45,9 +44,34 @@ async function gmailFetch(endpoint: string, token: string): Promise<Response> {
   return response
 }
 
-function buildDomainQuery(customDomains: string[]): string {
-  const allDomains = [...ATS_DOMAINS, ...customDomains]
-  return allDomains.map((d) => `from:${d}`).join(' OR ')
+// Job-related search keywords for Gmail query (high-signal terms)
+const JOB_SEARCH_KEYWORDS = [
+  '"interview invitation"',
+  '"phone screen"',
+  '"technical assessment"',
+  '"coding challenge"',
+  '"offer letter"',
+  '"pleased to offer"',
+  '"compensation package"',
+  '"received your application"',
+  '"thank you for applying"',
+  '"application submitted"',
+  '"not moving forward"',
+  '"other candidates"',
+  '"position has been filled"',
+  '"next steps in the process"',
+  '"schedule an interview"',
+  '"meet the team"',
+  '"virtual onsite"',
+]
+
+function buildJobQuery(customDomains: string[]): string {
+  const keywordPart = JOB_SEARCH_KEYWORDS.join(' OR ')
+  if (customDomains.length > 0) {
+    const domainPart = customDomains.map((d) => `from:${d}`).join(' OR ')
+    return `(${keywordPart} OR ${domainPart})`
+  }
+  return `(${keywordPart})`
 }
 
 interface GmailMessage {
@@ -73,8 +97,8 @@ export async function fetchMessagesByDate(afterDays: number): Promise<JobEmail[]
   const settings = await getSettings()
   const afterDate = new Date(Date.now() - afterDays * 24 * 60 * 60 * 1000)
   const dateStr = `${afterDate.getFullYear()}/${afterDate.getMonth() + 1}/${afterDate.getDate()}`
-  const domainQuery = buildDomainQuery(settings.customDomains)
-  const query = `(${domainQuery}) after:${dateStr}`
+  const jobQuery = buildJobQuery(settings.customDomains)
+  const query = `${jobQuery} after:${dateStr}`
 
   const messageIds: GmailMessage[] = []
   let pageToken: string | undefined
@@ -165,8 +189,6 @@ async function fetchMessageDetails(
   messages: GmailMessage[],
   token: string
 ): Promise<JobEmail[]> {
-  const settings = await getSettings()
-  const allDomains = [...ATS_DOMAINS, ...settings.customDomains]
   const emails: JobEmail[] = []
 
   // Batch in groups of 20 to avoid overwhelming the API
@@ -194,15 +216,10 @@ async function fetchMessageDetails(
       const subject = subjectHeader?.value || ''
       const snippet = detail.snippet || ''
 
-      // Check if sender matches any ATS domain
-      const senderLower = sender.toLowerCase()
-      const isAtsDomain = allDomains.some((domain) =>
-        senderLower.includes(domain.toLowerCase())
-      )
-
-      if (!isAtsDomain) continue
-
       const category = classifyEmail(subject, snippet)
+
+      // Skip emails that don't match any job category
+      if (category === 'other') continue
 
       emails.push({
         id: detail.id,
