@@ -1,0 +1,274 @@
+{"subject": "Offer Letter - Senior Software Engineer", "snippet": "Hi Sarah, please find attached your formal offer letter for the Senior Software Engineer position. The package includes...", "label": "offer"}
+{"subject": "We'd like to extend an offer!", "snippet": "Congratulations! After careful deliberation, our team has decided to offer you the Product Manager role at Stripe...", "label": "offer"}
+{"subject": "Next steps regarding your candidacy", "snippet": "Hi James, I'm excited to share that we'd like to move forward with a formal offer. Please expect compensation details...", "label": "offer"}
+{"subject": "Compensation Package - Data Scientist", "snippet": "Dear Priya, enclosed is the compensation breakdown including base salary, equity grant, signing bonus, and benefits...", "label": "offer"}
+{"subject": "Welcome to the team!", "snippet": "We're thrilled to have you join us as a Frontend Engineer starting July 14th. Your onboarding schedule and first-week...", "label": "offer"}
+{"subject": "Your offer from Airbnb", "snippet": "Hi Marcus, on behalf of the entire hiring team, we're pleased to present you with an offer for the Staff Engineer...", "label": "offer"}
+{"subject": "RE: Final Interview Follow-up", "snippet": "Great news \u2014 we'd like to offer you the role. I've attached the details for your review. Let me know if you have...", "label": "offer"}
+{"subject": "Action Required: Review Your Offer", "snippet": "Please log in to Workday to review and accept your offer for the DevOps Engineer position. This offer expires on...", "label": "offer"}
+{"subject": "Congrats from the hiring team!", "snippet": "Hey Alex! Everyone loved meeting you. We want to bring you on board as our new ML Engineer. Let's hop on a call to...", "label": "offer"}
+{"subject": "Position Offer - Cloud Architect", "snippet": "Dear Candidate, we are pleased to confirm our intent to hire you for the Cloud Architect position. Please review the...", "label": "offer"}
+{"subject": "Formal Offer: Marketing Director", "snippet": "Following our discussion last Thursday, I'm delighted to present the formal offer. Annual comp is $185K base plus...", "label": "offer"}
+{"subject": "Greenhouse: Offer for UX Designer", "snippet": "You have a new offer letter waiting in Greenhouse. Click here to review the details for UX Designer at Figma...", "label": "offer"}
+{"subject": "Your start date and next steps", "snippet": "Congratulations on accepting the offer! Your confirmed start date is August 5th. Please complete the following pre-...", "label": "offer"}
+{"subject": "Revised Offer - Backend Engineer", "snippet": "Hi Lee, per our negotiation call, here is the updated offer reflecting the adjusted equity and remote work arrangement...", "label": "offer"}
+{"subject": "Let's make it official", "snippet": "Hi Jordan, the team is excited to bring you on as a Solutions Architect. I've sent over the offer via DocuSign for...", "label": "offer"}
+{"subject": "Exciting news about your application", "snippet": "We've reviewed all candidates and are delighted to share that you've been selected. Please see attached offer terms...", "label": "offer"}
+{"subject": "Offer pending background check", "snippet": "Your conditional offer for the Security Engineer position is ready. Final confirmation pending successful completion...", "label": "offer"}
+{"subject": "Package details for QA Lead role", "snippet": "Here's the breakdown: $140K base, 15% annual bonus target, 4 weeks PTO, stock options vesting over 4 years...", "label": "offer"}
+{"subject": "Re: Salary expectations discussion", "snippet": "Thanks for the conversation. I'm happy to confirm we can meet your range. Formal offer letter incoming today by 5PM...", "label": "offer"}
+{"subject": "Your new role at Databricks", "snippet": "Dear Mei, we're formalizing the offer for Principal Engineer. The role reports to VP Engineering and includes...", "label": "offer"}
+{"subject": "Government position offer - GS-13", "snippet": "You have been selected for the Information Technology Specialist position, GS-2210-13. Your tentative start date...", "label": "offer"}
+{"subject": "Consulting offer - Associate level", "snippet": "Dear Applicant, McKinsey & Company is pleased to extend an offer for the Associate position in our Chicago office...", "label": "offer"}
+{"subject": "Internship offer from Meta", "snippet": "Hi Chen, congratulations! We'd love for you to join us as a Software Engineering Intern for Summer 2026. Your mentor...", "label": "offer"}
+{"subject": "Job offer \u2014 React Native Developer", "snippet": "After three rounds of interviews, we're confident you're the right fit. Attached is our offer for $155K plus equity...", "label": "offer"}
+{"subject": "Lever: New offer awaiting your review", "snippet": "A new document has been shared with you via Lever. Please log in to review your offer package for the Platform...", "label": "offer"}
+{"subject": "Re: Follow-up from panel", "snippet": "Hi Raj, I spoke with the VP and we're aligned \u2014 we want to make you an offer. Can you chat tomorrow to go over comp?", "label": "offer"}
+{"subject": "Healthcare Analyst - Offer Confirmation", "snippet": "Dear Dr. Williams, we're pleased to confirm your appointment as Senior Healthcare Analyst effective September 1st...", "label": "offer"}
+{"subject": "Retail Operations Manager Offer", "snippet": "Hi, Target is excited to offer you the Retail Operations Manager position at our Minneapolis HQ. Salary: $95K plus...", "label": "offer"}
+{"subject": "Your fintech opportunity", "snippet": "We'd like to formally offer you the role of Engineering Manager at Plaid. Your total compensation package is detailed...", "label": "offer"}
+{"subject": "Offer and equity details enclosed", "snippet": "Please find your offer letter and equity agreement attached. The grant consists of 15,000 options at a strike price...", "label": "offer"}
+{"subject": "Interview with the engineering team", "snippet": "Hi Taylor, we'd love to set up a 45-minute technical discussion with two of our senior engineers. Are you free...", "label": "interview_request"}
+{"subject": "Scheduling your phone screen", "snippet": "Thanks for applying to Shopify! We'd like to arrange a 30-minute introductory call with a recruiter. Please use this...", "label": "interview_request"}
+{"subject": "Update on your application", "snippet": "Hi, we'd like to invite you for a virtual onsite consisting of 4 back-to-back sessions. Please share your availability...", "label": "interview_request"}
+{"subject": "Coding challenge invitation", "snippet": "As the next step in our process, please complete the attached HackerRank assessment within 72 hours. The test covers...", "label": "interview_request"}
+{"subject": "Meet the hiring manager", "snippet": "Dear Candidate, our hiring manager would like to schedule a 1:1 conversation about the Product Designer role...", "label": "interview_request"}
+{"subject": "Technical assessment - next steps", "snippet": "Congrats on passing the recruiter screen! We'd like you to complete a take-home assignment. Details are in the attached...", "label": "interview_request"}
+{"subject": "Availability for next week?", "snippet": "Hey! Really enjoyed your profile. Would love to chat about the Staff SRE role \u2014 any slots open Tuesday or Wednesday?", "label": "interview_request"}
+{"subject": "Greenhouse: Interview scheduled", "snippet": "Your interview for Backend Engineer at Notion has been confirmed for June 18 at 2:00 PM PST via Zoom. The panel...", "label": "interview_request"}
+{"subject": "Quick chat about an opening", "snippet": "Hi Sam, I'm a recruiter at Coinbase. Your background caught my eye \u2014 would you be open to a quick 20-min call to...", "label": "interview_request"}
+{"subject": "Panel interview details", "snippet": "You've been invited to a panel interview on Thursday. You'll meet with the VP of Engineering, a Staff Engineer, and...", "label": "interview_request"}
+{"subject": "Application status: moving forward", "snippet": "Good news! The team reviewed your materials and would like to proceed with a technical phone screen. Please select a...", "label": "interview_request"}
+{"subject": "System design round", "snippet": "Hi, for the next step we'd like to schedule a 60-minute system design interview. The focus will be on designing a...", "label": "interview_request"}
+{"subject": "Behavioral interview invitation", "snippet": "As part of our process, we'd like to schedule a behavioral/leadership interview with our Director of Product. Would...", "label": "interview_request"}
+{"subject": "Your candidacy for Data Engineer", "snippet": "Hi Maria, we were impressed by your resume and would like to arrange an initial phone conversation. Can you share...", "label": "interview_request"}
+{"subject": "Lever: Interview request", "snippet": "You have been scheduled for an interview via Lever. Please confirm your availability for the Frontend Developer...", "label": "interview_request"}
+{"subject": "Let's connect \u2014 DevOps opening", "snippet": "Hi, I found your profile on LinkedIn and think you'd be a great match for our DevOps Lead position. Free for a call...", "label": "interview_request"}
+{"subject": "Re: Application for iOS Developer", "snippet": "Thanks for your patience. The team would like to move you to the next round \u2014 a pair programming session over Zoom...", "label": "interview_request"}
+{"subject": "Final round interview", "snippet": "Congratulations on making it to the final round! We'd like to arrange a half-day onsite at our SF office. Travel will...", "label": "interview_request"}
+{"subject": "Calendly: Pick a time for your interview", "snippet": "Your interviewer has shared their calendar. Please select a 45-minute slot that works for you: https://calendly.com/...", "label": "interview_request"}
+{"subject": "Next step: case study presentation", "snippet": "For the next round, we'd like you to prepare a 20-minute case study presentation on a product growth challenge...", "label": "interview_request"}
+{"subject": "Ashby: Interview confirmation", "snippet": "Your interview with Linear for the Full Stack Engineer role is scheduled for Monday June 22 at 10am PT. Join via...", "label": "interview_request"}
+{"subject": "Re: Coffee chat follow-up", "snippet": "Great catching up last week! The hiring manager is interested \u2014 can we set up a formal first round for the PM role?", "label": "interview_request"}
+{"subject": "iCIMS: Action required", "snippet": "Please log in to complete your pre-interview questionnaire and confirm your interview slot for the QA Analyst...", "label": "interview_request"}
+{"subject": "Workday: New interview notification", "snippet": "An interview has been scheduled on your behalf for the Business Intelligence Analyst position at Deloitte. Date:...", "label": "interview_request"}
+{"subject": "VP Engineering would like to meet", "snippet": "Hi, our VP Engineering saw your profile and would like to have an informal chat about potential roles on the platform...", "label": "interview_request"}
+{"subject": "Cross-functional interview loop", "snippet": "You're scheduled for a cross-functional interview loop on June 25th. You'll meet with Engineering, Design, and PM...", "label": "interview_request"}
+{"subject": "Technical screen - Ruby on Rails", "snippet": "We'd like to schedule a 60-minute live coding session focused on Rails. You'll work through a real-world feature...", "label": "interview_request"}
+{"subject": "Hiring team wants to meet you", "snippet": "The team at Vercel loved your portfolio and would like to set up a design review interview. Expect a 45-min session...", "label": "interview_request"}
+{"subject": "Your interview with Amazon", "snippet": "This email confirms your Loop interview at Amazon for the SDE II position on July 1. Please review the attached prep...", "label": "interview_request"}
+{"subject": "SmartRecruiters: Interview invite", "snippet": "You've been invited to interview for Marketing Analyst at HubSpot. Click below to choose your preferred time slot...", "label": "interview_request"}
+{"subject": "Follow-up: Engineering Manager role", "snippet": "Hi Divya, thanks for the intro call. The team would like to proceed with a leadership-focused interview. Can you do...", "label": "interview_request"}
+{"subject": "Schedule your onsite at Google", "snippet": "Congratulations on advancing to the onsite stage! Your recruiter will reach out to coordinate 5 interview sessions...", "label": "interview_request"}
+{"subject": "Culture fit conversation", "snippet": "We'd love to arrange a casual 30-minute culture conversation with two team members. This is informal \u2014 no trick...", "label": "interview_request"}
+{"subject": "Hackerrank: Complete your assessment", "snippet": "You've been invited to take a coding assessment for the Software Engineer role at Bloomberg. You have 90 minutes...", "label": "interview_request"}
+{"subject": "Please complete CodeSignal test", "snippet": "As part of the application process for the Backend position, please complete this CodeSignal assessment by Friday...", "label": "interview_request"}
+{"subject": "Re: Intro from mutual connection", "snippet": "Thanks for the warm intro, Mike! Hi Sarah, I'd love to schedule a call to discuss the Principal Engineer opening...", "label": "interview_request"}
+{"subject": "Whiteboard session \u2014 Thursday 2pm", "snippet": "Confirming your whiteboard interview for the distributed systems role. The session will cover consistency models and...", "label": "interview_request"}
+{"subject": "Founder chat \u2014 early stage startup", "snippet": "Hey! I'm the CTO of a Series A fintech startup. Your background in payments infra is exactly what we need. Quick call?", "label": "interview_request"}
+{"subject": "Government interview: IT Specialist", "snippet": "You have been referred and selected for an interview for the IT Specialist position, GS-2210-12, at the Department...", "label": "interview_request"}
+{"subject": "Consulting case interview - Round 1", "snippet": "Dear Applicant, you are invited to a first-round case interview for the Analyst position at BCG. The 45-minute...", "label": "interview_request"}
+{"subject": "Design critique round", "snippet": "For the next stage, please prepare a 15-minute critique of an existing product's UX. You'll present to our Head of...", "label": "interview_request"}
+{"subject": "Second round invitation", "snippet": "Hi, we'd like to invite you back for a second-round interview for the Android Developer role. This will be a 90-min...", "label": "interview_request"}
+{"subject": "Manager round \u2014 Sales Engineering", "snippet": "The Director of SE wants to discuss your experience with enterprise accounts. Can you do a 30-min Zoom on Wednesday?", "label": "interview_request"}
+{"subject": "Thank you for your interest", "snippet": "We appreciate you taking the time to interview with us. After careful consideration, we've decided to move forward...", "label": "rejection"}
+{"subject": "Update on your application", "snippet": "Hi Priya, thank you for your interest in the Data Scientist role. Unfortunately, we won't be proceeding with your...", "label": "rejection"}
+{"subject": "Your application to Stripe", "snippet": "We were impressed by your background but have decided to pursue candidates whose experience more closely aligns with...", "label": "rejection"}
+{"subject": "Decision regarding your candidacy", "snippet": "Dear James, after reviewing all applicants, we regret to inform you that we will not be moving forward at this time...", "label": "rejection"}
+{"subject": "Regarding the Senior Engineer position", "snippet": "Thank you for interviewing with our team last week. While we were impressed with your technical skills, we've decided...", "label": "rejection"}
+{"subject": "Application status update", "snippet": "Hi, we wanted to let you know that the Product Manager position has been filled. We encourage you to apply for future...", "label": "rejection"}
+{"subject": "Greenhouse: Application update", "snippet": "Thank you for your application to Frontend Developer at Vercel. After careful review, we have decided not to proceed...", "label": "rejection"}
+{"subject": "We appreciate your time", "snippet": "Dear Candidate, it was a pleasure getting to know you. However, we've chosen to continue with another candidate who...", "label": "rejection"}
+{"subject": "Feedback from your interview", "snippet": "Hi Marcus, thanks again for interviewing. The team felt your system design skills were strong but we're looking for...", "label": "rejection"}
+{"subject": "Important update on your candidacy", "snippet": "After much deliberation, we've decided to go in a different direction for the Engineering Manager role. This was a...", "label": "rejection"}
+{"subject": "Re: Final round follow-up", "snippet": "Hi Sarah, I'm sorry to share that we won't be extending an offer at this time. The team had a difficult decision as...", "label": "rejection"}
+{"subject": "Your application to Google", "snippet": "Thank you for your interest in Google. We've reviewed your application for Software Engineer L5 and unfortunately...", "label": "rejection"}
+{"subject": "Lever: Application status changed", "snippet": "Your application for DevOps Engineer at Datadog has been archived. We appreciate your interest and encourage you to...", "label": "rejection"}
+{"subject": "Following up on our conversation", "snippet": "Hi, I wanted to personally reach out. While your background is impressive, we've identified a candidate with more...", "label": "rejection"}
+{"subject": "The position has been filled", "snippet": "Thank you for applying for the UX Researcher role. We've completed our search and extended an offer to another...", "label": "rejection"}
+{"subject": "Workday: Application declined", "snippet": "Your application for Business Analyst at JPMorgan Chase has been reviewed and we are unable to advance your candidacy...", "label": "rejection"}
+{"subject": "We'll keep you in mind", "snippet": "Hi Taylor, while we can't offer you this particular role, we were impressed enough to keep your resume on file for...", "label": "rejection"}
+{"subject": "Thank you for interviewing", "snippet": "The team genuinely enjoyed meeting you. However, after comparing all finalists, we've decided to proceed with a...", "label": "rejection"}
+{"subject": "Application update - QA Engineer", "snippet": "We appreciate your interest in the QA Engineer position at Atlassian. After reviewing a high volume of applications...", "label": "rejection"}
+{"subject": "Not moving forward at this time", "snippet": "Hi, while your experience in mobile development is strong, we're looking for someone with more native iOS experience...", "label": "rejection"}
+{"subject": "Regarding your recent interview", "snippet": "Dear Applicant, we want to thank you for the time and effort you put into the interview process. Regrettably, we've...", "label": "rejection"}
+{"subject": "iCIMS notification: Status update", "snippet": "Your application for Systems Administrator at Cisco has been updated. Status: Not Selected. We encourage you to...", "label": "rejection"}
+{"subject": "Tough decision", "snippet": "Hey Jordan, this is a hard email to write. You were one of our top 3 finalists but we ultimately went with someone...", "label": "rejection"}
+{"subject": "Post-interview update", "snippet": "Thank you for the wonderful conversation last Tuesday. While we really liked your approach to problem-solving, the...", "label": "rejection"}
+{"subject": "Your consulting application", "snippet": "Dear Candidate, thank you for your interest in Bain & Company. After careful evaluation of your case interview...", "label": "rejection"}
+{"subject": "Government hiring update", "snippet": "We regret to inform you that you were not selected for the IT Specialist position, GS-2210-13. The selecting official...", "label": "rejection"}
+{"subject": "Re: Marketing Manager application", "snippet": "Hi Chen, unfortunately we've decided to go with a candidate who has more direct experience in B2B SaaS marketing...", "label": "rejection"}
+{"subject": "Ashby: Candidate update", "snippet": "Your application for the Growth Engineer position at Ramp has been moved to Rejected. We appreciate your interest...", "label": "rejection"}
+{"subject": "SmartRecruiters: Status change", "snippet": "Hello, the status of your application for Senior Backend Developer at Twilio has changed to: Not Progressing. Thank...", "label": "rejection"}
+{"subject": "Closing the loop", "snippet": "Hi Mei, wanted to circle back on the Staff Engineer role. The hiring committee met and decided not to move forward...", "label": "rejection"}
+{"subject": "Our decision", "snippet": "Thank you for considering us. After extensive review, we don't feel there's a strong enough fit at this time. We wish...", "label": "rejection"}
+{"subject": "Interview outcome", "snippet": "Hi Raj, I appreciate the effort you put into the take-home project. While the solution was creative, the team felt...", "label": "rejection"}
+{"subject": "Regarding future opportunities", "snippet": "We won't be moving forward with your application for the current opening, but your profile stood out and we'd love...", "label": "rejection"}
+{"subject": "Difficult update", "snippet": "Hi, I know this isn't the news you were hoping for. The VP ultimately chose a candidate with more enterprise sales...", "label": "rejection"}
+{"subject": "Your role at Amazon", "snippet": "Thank you for interviewing at Amazon. Unfortunately, after the debrief, we're unable to extend an offer for SDE II...", "label": "rejection"}
+{"subject": "Internship decision", "snippet": "Dear Student, thank you for applying to the Meta Software Engineering Internship. Due to the competitive nature of...", "label": "rejection"}
+{"subject": "Update on the design position", "snippet": "Hi, we've wrapped up interviews for the Senior Product Designer role. While your portfolio was strong, we've selected...", "label": "rejection"}
+{"subject": "Healthcare Analyst decision", "snippet": "Dear Dr. Williams, after reviewing all candidates for the Healthcare Analyst position, we've decided to proceed with...", "label": "rejection"}
+{"subject": "Re: Data Engineering role", "snippet": "Hi, I appreciate your patience through our process. Unfortunately the team has decided not to move forward. Your SQL...", "label": "rejection"}
+{"subject": "We've received your application!", "snippet": "Thank you for applying to the Software Engineer position at Notion. Our team will review your application and reach...", "label": "application_confirmation"}
+{"subject": "Application confirmation", "snippet": "Hi, this is to confirm we've received your application for Product Manager at Stripe. We'll be in touch if your...", "label": "application_confirmation"}
+{"subject": "Thank you for applying to Airbnb", "snippet": "We appreciate your interest in the Data Scientist role. Your application has been submitted successfully and is now...", "label": "application_confirmation"}
+{"subject": "Your application has been received", "snippet": "Dear Candidate, thank you for submitting your application for the DevOps Engineer position. Our recruiting team will...", "label": "application_confirmation"}
+{"subject": "Greenhouse: Application submitted", "snippet": "Your application for Frontend Developer at Figma has been received. You can track your application status by logging...", "label": "application_confirmation"}
+{"subject": "Thanks for your interest in Shopify", "snippet": "We've received your application for the Staff Engineer role. Due to high volume, we may not respond to every applicant...", "label": "application_confirmation"}
+{"subject": "Application received \u2014 ML Engineer", "snippet": "Thank you for your interest in the Machine Learning Engineer position. We've received your resume and will review it...", "label": "application_confirmation"}
+{"subject": "Workday: Submission confirmed", "snippet": "Your application for Business Analyst at Deloitte has been successfully submitted. You will receive updates via this...", "label": "application_confirmation"}
+{"subject": "We got your application!", "snippet": "Hey! Thanks for applying to join our team as a Growth Engineer. We'll review your materials and get back to you within...", "label": "application_confirmation"}
+{"subject": "Lever: Application received", "snippet": "Thanks for applying! Your application for Backend Engineer at Datadog has been submitted. We review every application...", "label": "application_confirmation"}
+{"subject": "Confirmation: UX Designer application", "snippet": "This email confirms your application for the UX Designer role at Spotify. Our design team reviews applications on a...", "label": "application_confirmation"}
+{"subject": "iCIMS: Application status", "snippet": "Your application for Systems Engineer at Cisco has been received and is under review. You can check your status at...", "label": "application_confirmation"}
+{"subject": "Thank you for applying!", "snippet": "Hi Jordan, thanks for your interest in the QA Lead position. We've received your materials and will be reviewing...", "label": "application_confirmation"}
+{"subject": "SmartRecruiters: Submission received", "snippet": "Your application for Senior Backend Developer at Twilio has been received. Our team will review and respond within...", "label": "application_confirmation"}
+{"subject": "Application acknowledged", "snippet": "Dear Applicant, we confirm receipt of your application for the Consulting Analyst position at BCG. Due to the large...", "label": "application_confirmation"}
+{"subject": "Your Coinbase application", "snippet": "Thanks for your interest in the Blockchain Engineer role! Our recruiting team will review your profile and reach out...", "label": "application_confirmation"}
+{"subject": "Successfully applied: Platform Engineer", "snippet": "Your application to the Platform Engineer role at Cloudflare has been submitted. We aim to review all applications...", "label": "application_confirmation"}
+{"subject": "Ashby: Application confirmed", "snippet": "We received your application for the Full Stack Engineer position at Linear. Thank you for your interest \u2014 we'll be...", "label": "application_confirmation"}
+{"subject": "Application submitted via LinkedIn", "snippet": "Your Easy Apply application for Marketing Manager at HubSpot has been sent to the employer. You'll be notified if...", "label": "application_confirmation"}
+{"subject": "We'll review your application", "snippet": "Hi, thank you for applying for the Technical Writer role. Our team carefully reviews all applications and will follow...", "label": "application_confirmation"}
+{"subject": "Government application received", "snippet": "Your application for the IT Specialist position, GS-2210-12, has been received by USAJobs. Referred status updates...", "label": "application_confirmation"}
+{"subject": "Thank you for your interest in Meta", "snippet": "We've received your application for the Software Engineering Internship. Applications are reviewed on a rolling basis...", "label": "application_confirmation"}
+{"subject": "Retail position: Application received", "snippet": "Thank you for applying to the Retail Operations Manager role at Target. Your application is being reviewed by our...", "label": "application_confirmation"}
+{"subject": "Healthcare application confirmation", "snippet": "Dear Dr. Chen, your application for the Healthcare Analyst position at Kaiser Permanente has been received. Our HR...", "label": "application_confirmation"}
+{"subject": "Your application to Plaid", "snippet": "Thanks for considering Plaid! We've received your application for Engineering Manager and will review it shortly...", "label": "application_confirmation"}
+{"subject": "Application status: Under review", "snippet": "Your application for Android Developer at DoorDash is currently under review. We typically complete initial screening...", "label": "application_confirmation"}
+{"subject": "Jobvite: Application received", "snippet": "Thank you for applying to the Sales Engineer position via Jobvite. Your application has been forwarded to the hiring...", "label": "application_confirmation"}
+{"subject": "Thank you for your interest", "snippet": "We've received your application for the Security Engineer role at CrowdStrike. Our team will review your qualifications...", "label": "application_confirmation"}
+{"subject": "Breezy: Application submitted", "snippet": "Your application for Junior Developer at a growing fintech startup has been received via Breezy HR. We'll be in touch...", "label": "application_confirmation"}
+{"subject": "Confirmation: Finance Analyst", "snippet": "Thank you for applying to the Finance Analyst position at Goldman Sachs. Your application is now in our system and...", "label": "application_confirmation"}
+{"subject": "We've received your resume", "snippet": "Hi Maria, thanks for submitting your application for the Data Engineer role. We'll review your experience and follow...", "label": "application_confirmation"}
+{"subject": "Application for SRE received", "snippet": "Dear Candidate, thank you for applying to the Site Reliability Engineer position. Our engineering team reviews...", "label": "application_confirmation"}
+{"subject": "Successfully submitted", "snippet": "Your application for the Solutions Architect role at AWS has been submitted successfully. You will receive a...", "label": "application_confirmation"}
+{"subject": "Applied: Cloud Architect at Oracle", "snippet": "Thank you for your interest in the Cloud Architect position. We confirm receipt of your application materials...", "label": "application_confirmation"}
+{"subject": "Thank you for applying to Ramp", "snippet": "Hi, we've got your application for the Growth Analyst role! We review candidates weekly and will reach out if there's...", "label": "application_confirmation"}
+{"subject": "Startup application received", "snippet": "Thanks for applying to our early-stage startup! We're reviewing all applications for the Founding Engineer role...", "label": "application_confirmation"}
+{"subject": "Application for iOS Developer", "snippet": "We've received your application for the iOS Developer position. Our mobile team will review your profile and portfolio...", "label": "application_confirmation"}
+{"subject": "Your application is under review", "snippet": "Dear Applicant, this confirms your application for Research Scientist at DeepMind. Due to the volume of applications...", "label": "application_confirmation"}
+{"subject": "Recruiterbox: Application received", "snippet": "Thank you for submitting your application for the Support Engineer position via Recruiterbox. We'll be reviewing...", "label": "application_confirmation"}
+{"subject": "Applied: VP of Engineering", "snippet": "Your application for Vice President of Engineering has been received by our executive search committee. We will be...", "label": "application_confirmation"}
+{"subject": "Exciting opportunity at our company", "snippet": "Hi, I came across your profile on LinkedIn and thought you'd be a great fit for a role we're hiring for. Would you be...", "label": "other"}
+{"subject": "Reference check request", "snippet": "Dear Candidate, as part of our hiring process, we need to conduct reference checks. Could you please provide contact...", "label": "other"}
+{"subject": "Background verification in progress", "snippet": "Your background check has been initiated through Checkr. You should receive a separate email with instructions to...", "label": "other"}
+{"subject": "Jobs matching your profile", "snippet": "Based on your job preferences, here are 5 new openings this week: Senior Engineer at Stripe, PM at Notion, Staff...", "label": "other"}
+{"subject": "Join our talent community", "snippet": "Hi, although we don't have an immediate opening that fits your profile, we'd love to keep in touch. Join our talent...", "label": "other"}
+{"subject": "Your weekly job alert", "snippet": "15 new jobs match your saved search 'Software Engineer Remote'. Click to view: Backend at Shopify, Full Stack at...", "label": "other"}
+{"subject": "Salary survey invitation", "snippet": "Help us build the 2026 tech compensation report! Complete this 5-minute survey about your current role and comp...", "label": "other"}
+{"subject": "Relocation package inquiry", "snippet": "Hi, before we proceed further in the process, we wanted to check \u2014 would you be open to relocating to our Austin...", "label": "other"}
+{"subject": "Pre-employment paperwork", "snippet": "Please complete the attached I-9 form and return it along with the required identification documents before your...", "label": "other"}
+{"subject": "Networking event: Tech Careers Night", "snippet": "You're invited to our virtual networking event with hiring managers from top tech companies. Register for Thursday...", "label": "other"}
+{"subject": "LinkedIn: New job recommendations", "snippet": "Based on your profile and activity, we found these roles for you: Engineering Manager at Figma, Staff SRE at...", "label": "other"}
+{"subject": "Your Indeed profile was viewed", "snippet": "A recruiter from a mid-size fintech company viewed your Indeed profile. Update your resume to increase your chances...", "label": "other"}
+{"subject": "Glassdoor: Interview tips for your application", "snippet": "You recently applied to Stripe. Here's what other candidates said about the interview process: 3 rounds, system...", "label": "other"}
+{"subject": "Work authorization inquiry", "snippet": "Hi, quick question before we move forward \u2014 do you require visa sponsorship for employment in the United States?", "label": "other"}
+{"subject": "Follow-up from career fair", "snippet": "Great meeting you at the Career Expo last Saturday! I'm a recruiter at Palantir. Would love to continue our chat...", "label": "other"}
+{"subject": "Your HackerRank profile update", "snippet": "Congratulations on completing 50 challenges! Companies like Amazon and Goldman Sachs are looking for candidates with...", "label": "other"}
+{"subject": "NDA for interview process", "snippet": "Before proceeding to the next stage, please review and sign the attached Non-Disclosure Agreement. This is standard...", "label": "other"}
+{"subject": "Recruiter InMail", "snippet": "Hi, I'm reaching out because your experience in distributed systems is exactly what one of my clients is looking for...", "label": "other"}
+{"subject": "Portfolio review feedback", "snippet": "Hi, I took a look at the portfolio you submitted. Before the interview, could you walk me through the rationale behind...", "label": "other"}
+{"subject": "Drug screening required", "snippet": "As part of the conditional offer process, you'll need to complete a drug screening at a Quest Diagnostics location...", "label": "other"}
+{"subject": "Re: Job posting question", "snippet": "Thanks for reaching out! Yes, the role is fully remote and we're open to candidates in any US timezone. Happy to chat...", "label": "other"}
+{"subject": "Security clearance inquiry", "snippet": "For this government contractor role, an active Secret clearance is required. Can you confirm your clearance status?", "label": "other"}
+{"subject": "Assessment platform invite", "snippet": "You've been invited to create an account on Karat to complete an upcoming technical evaluation. Please register at...", "label": "other"}
+{"subject": "Hiring freeze update", "snippet": "Hi, I wanted to give you a heads up \u2014 we've implemented a temporary hiring pause. Your application is still active and...", "label": "other"}
+{"subject": "Referral bonus: Know someone?", "snippet": "Hey, we're offering a $5,000 referral bonus for Senior Engineers. Know anyone looking? Share this link with your...", "label": "other"}
+{"subject": "Career coaching session", "snippet": "Your free 30-minute career coaching session with a former Google recruiter is confirmed for Thursday at 3PM. Zoom...", "label": "other"}
+{"subject": "Wellfound: Startup matches", "snippet": "3 funded startups want to connect with you: a fintech Series B, an AI seed-stage, and a healthtech Series A. Review...", "label": "other"}
+{"subject": "Employee referral follow-up", "snippet": "Hi, Alex from the DevTools team referred you internally. I'd love to share more about what we're building. No formal...", "label": "other"}
+{"subject": "Your application is on hold", "snippet": "Hi, we're still very interested but the role is temporarily on hold due to budget review. We'll reach out as soon as...", "label": "other"}
+{"subject": "Team structure overview", "snippet": "Hi, as requested after our last call, here's an overview of the team you'd be joining: 8 engineers, 2 designers, 1PM...", "label": "other"}
+{"subject": "Re: Remote work policy question", "snippet": "Good question! We're hybrid \u2014 2 days in office (Tue/Thu), rest remote. Most of the engineering team is in NYC and SF...", "label": "other"}
+{"subject": "Complete your Triplebyte profile", "snippet": "You started a Triplebyte assessment but didn't finish. Complete it to unlock interview fast-tracks with top tech...", "label": "other"}
+{"subject": "Contract-to-hire opportunity", "snippet": "Hi, we have a 6-month contract-to-hire opportunity for a React developer. Rate is $85/hr. Interested? Reply and I'll...", "label": "other"}
+{"subject": "Onboarding checklist reminder", "snippet": "Friendly reminder to complete your pre-boarding tasks before Day 1: laptop preference survey, emergency contacts, tax...", "label": "other"}
+{"subject": "Visa sponsorship timeline", "snippet": "Hi, our immigration team has reviewed your case. The H-1B filing window opens in March. Here's what we need from you...", "label": "other"}
+{"subject": "Equity refresher explanation", "snippet": "As discussed, here's how our equity refresh program works: annual grants based on performance rating, vesting over 4...", "label": "other"}
+{"subject": "Hired.com: New interview request", "snippet": "A company on Hired wants to interview you for a Senior Backend role. Salary range: $180-220K. Accept or decline within...", "label": "other"}
+{"subject": "Benefits enrollment deadline", "snippet": "Your benefits enrollment window closes Friday. Please log in to Gusto to select your health, dental, and 401k...", "label": "other"}
+{"subject": "Candidate experience survey", "snippet": "We'd love your feedback on our hiring process. This anonymous survey takes 2 minutes and helps us improve for future...", "label": "other"}
+{"subject": "Take-home project submission", "snippet": "Hi, please submit your completed take-home project via the GitHub repo link we shared. Deadline is Sunday 11:59PM...", "label": "interview_request"}
+{"subject": "Pair programming session Thursday", "snippet": "Looking forward to the pair programming round! We'll work on a real feature from our codebase. Please have your dev...", "label": "interview_request"}
+{"subject": "Re: Engineering role discussion", "snippet": "Hi, the team has reviewed your profile and would love to set up an initial 30-min chat. Are you available next Tues?", "label": "interview_request"}
+{"subject": "Interview prep materials", "snippet": "Attached are the prep materials for your upcoming interview. The session will cover system design and behavioral...", "label": "interview_request"}
+{"subject": "Scheduling final conversation", "snippet": "Hi, we're at the last step! Would you be free for a 20-min chat with our CTO? He likes to meet every finalist before...", "label": "interview_request"}
+{"subject": "We've decided to go another direction", "snippet": "Hi Lee, I wanted to let you know directly \u2014 we've opted for a candidate with more experience in real-time data pipelines...", "label": "rejection"}
+{"subject": "Thanks for completing the assessment", "snippet": "We reviewed your coding assessment results. While you demonstrated solid fundamentals, we've decided to continue with...", "label": "other"}
+{"subject": "LinkedIn Premium: Recruiter insights", "snippet": "You appeared in 23 recruiter searches this week. Upgrade to Premium to see who's viewing your profile and stand out...", "label": "other"}
+{"subject": "Accommodation request for interview", "snippet": "If you require any accessibility accommodations for your upcoming interview, please let us know at least 48 hours in...", "label": "other"}
+{"subject": "Your Job Offer from Adobe", "snippet": "Hi Taylor, We're thrilled to offer you the Machine Learning Engineer position...", "label": "offer"}
+{"subject": "Let's Chat: Phone Screen for Product Manager", "snippet": "Following your application, the team is interested in moving forward with a technical interview...", "label": "interview_request"}
+{"subject": "Thank You for Applying to HealthTech Solutions", "snippet": "Thank you for your interest in the Machine Learning Engineer role at Airbnb. After careful considera...", "label": "rejection"}
+{"subject": "We've Received Your Resume", "snippet": "Dear Applicant, We have received your application and will be in touch if there's interest...", "label": "application_confirmation"}
+{"subject": "Let's Chat: Phone Screen for HR Coordinator", "snippet": "Are you available next week for a coding challenge and team meet? Please reply with your availabilit...", "label": "interview_request"}
+{"subject": "Recruiter Outreach: Exciting Opportunity", "snippet": "I'm a recruiter at Amazon and came across your profile. Are you open to new opportunities? ...", "label": "other"}
+{"subject": "Let's Chat: Phone Screen for Intern", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the Sales Repre...", "label": "interview_request"}
+{"subject": "Feedback on Your Interview", "snippet": "Dear Candidate, While your skills are impressive, we've chosen someone whose experience more closely...", "label": "rejection"}
+{"subject": "Application Received - Frontend Developer", "snippet": "Hi, Your application for the open role has been recorded in our system. The recruiting team will rev...", "label": "application_confirmation"}
+{"subject": "Let's Chat: Phone Screen for Machine Learning Engineer", "snippet": "Dear Applicant, We would like to invite you to interview for the position...", "label": "interview_request"}
+{"subject": "Congratulations! Your Offer for Senior Backend Engineer at Airbnb", "snippet": "Please find the attached offer letter detailing compensation, benefits, and start date options...", "label": "offer"}
+{"subject": "Congratulations! Your Offer for Machine Learning Engineer at Global Finance Ltd", "snippet": "After reviewing your application, we'd like to extend a competitive offer including base salary of.....", "label": "offer"}
+{"subject": "Update on Your Application for Marketing Specialist", "snippet": "Thank you for your interest in the Marketing Specialist role at Stripe. After careful consideration....", "label": "rejection"}
+{"subject": "Job Recommendation from LinkedIn", "snippet": "Just a quick note - your application is still under review. No decision yet...", "label": "other"}
+{"subject": "Update on Your Application for Sales Representative", "snippet": "Unfortunately, we won't be moving forward with your application at this time. We encourage you to ap...", "label": "rejection"}
+{"subject": "Application Submitted Successfully", "snippet": "Thank you for applying to the Marketing Specialist position at Airbnb. Your application has been rec...", "label": "application_confirmation"}
+{"subject": "Interview Invitation for Marketing Specialist at TechStart Inc", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the Machine Lea...", "label": "interview_request"}
+{"subject": "Reference Check Request", "snippet": "Hi, Could you please provide contact details for two professional references for the HR Coordinator ...", "label": "other"}
+{"subject": "Next Steps: Formal Offer", "snippet": "Dear Candidate, Congratulations on moving forward! The team loved your interview performance and...", "label": "offer"}
+{"subject": "Scheduling Your Next Interview", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the Intern role...", "label": "interview_request"}
+{"subject": "Application Received - Data Scientist", "snippet": "This is an automated message to confirm that your materials were successfully submitted...", "label": "application_confirmation"}
+{"subject": "Thank You for Applying to Global Finance Ltd", "snippet": "Thank you for your interest in the DevOps Engineer role at Google. After careful consideration...", "label": "rejection"}
+{"subject": "Technical Interview Request", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the Marketing S...", "label": "interview_request"}
+{"subject": "Interview Invitation for DevOps Engineer at Uber", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the Software En...", "label": "interview_request"}
+{"subject": "Update on Your Application for Data Scientist", "snippet": "We received a large number of qualified applicants and have decided to move forward with other candi...", "label": "rejection"}
+{"subject": "Background Check Notification", "snippet": "I'm a recruiter at IBM and came across your profile. Are you open to new opportunities? ...", "label": "other"}
+{"subject": "Thank You for Your Application", "snippet": "Thank you for applying to the Marketing Specialist position at Databricks. Your application has been...", "label": "application_confirmation"}
+{"subject": "Confirmation: Your Submission to RetailGiant", "snippet": "Thank you for applying to the Sales Representative position at TechStart Inc. Your application has b...", "label": "application_confirmation"}
+{"subject": "Update on Your Application for UX Designer", "snippet": "Thank you for your interest in the UX Designer role at Google. After careful consideration...", "label": "rejection"}
+{"subject": "Offer Details - Data Scientist Role", "snippet": "Hi Alex, We're thrilled to offer you the Marketing Specialist position...", "label": "offer"}
+{"subject": "Status Update on Your Application", "snippet": "Your background check has been initiated. Please complete the forms attached...", "label": "other"}
+{"subject": "Interview Invitation for HR Coordinator at TechStart Inc", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the DevOps Engi...", "label": "interview_request"}
+{"subject": "Excited to Extend an Offer for Senior Backend Engineer", "snippet": "Hi Taylor, We're thrilled to offer you the Product Manager position...", "label": "offer"}
+{"subject": "Thank You for Applying to Lyft", "snippet": "Thank you for your interest in the Software Engineer role at Oracle. After careful consideration...", "label": "rejection"}
+{"subject": "Application Received - Marketing Specialist", "snippet": "Thank you for applying to the Sales Representative position at GovTech Agency. Your application has ...", "label": "application_confirmation"}
+{"subject": "Update on Your Application - Next Steps", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the HR Coordina...", "label": "interview_request"}
+{"subject": "Congratulations! Your Offer for HR Coordinator at Stripe", "snippet": "Hi Jordan, We're thrilled to offer you the DevOps Engineer position...", "label": "offer"}
+{"subject": "Application Status", "snippet": "Thank you for your interest in the Software Engineer role at Uber. After careful consideration...", "label": "rejection"}
+{"subject": "Your Job Offer from Netflix", "snippet": "Hi Sam, We're thrilled to offer you the DevOps Engineer position...", "label": "offer"}
+{"subject": "Position Filled Notification", "snippet": "Thank you for your interest in the Sales Representative role at Amazon. After careful consideration....", "label": "rejection"}
+{"subject": "Congratulations! Your Offer for UX Designer at BioPharma Labs", "snippet": "Hi Alex, We're thrilled to offer you the Data Scientist position...", "label": "offer"}
+{"subject": "Update on Your Application for Machine Learning Engineer", "snippet": "Thank you for your interest in the DevOps Engineer role at Oracle. After careful consideration...", "label": "rejection"}
+{"subject": "Interview Invitation for HR Coordinator at RetailGiant", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the Product Man...", "label": "interview_request"}
+{"subject": "Thank You for Applying to Adobe", "snippet": "Thank you for your interest in the Machine Learning Engineer role at Netflix. After careful consider...", "label": "rejection"}
+{"subject": "Confirmation: Your Submission to BioPharma Labs", "snippet": "Thank you for applying to the UX Designer position at Uber. Your application has been received...", "label": "application_confirmation"}
+{"subject": "Congratulations! Your Offer for Frontend Developer at Databricks", "snippet": "Hi Alex, We're thrilled to offer you the Executive Assistant position...", "label": "offer"}
+{"subject": "Update on Your Application for Intern", "snippet": "Thank you for your interest in the Intern role at Salesforce. After careful consideration...", "label": "rejection"}
+{"subject": "Your Job Offer from TechStart Inc", "snippet": "Hi Jordan, We're thrilled to offer you the Product Manager position...", "label": "offer"}
+{"subject": "Application Received - DevOps Engineer", "snippet": "Thank you for applying to the HR Coordinator position at TechStart Inc. Your application has been re...", "label": "application_confirmation"}
+{"subject": "Application Received - HR Coordinator", "snippet": "Thank you for applying to the Software Engineer position at Cisco. Your application has been receive...", "label": "application_confirmation"}
+{"subject": "Your Job Offer from Salesforce", "snippet": "Hi Jordan, We're thrilled to offer you the Intern position...", "label": "offer"}
+{"subject": "Offer Details - Marketing Specialist Role", "snippet": "Hi Taylor, We're thrilled to offer you the UX Designer position...", "label": "offer"}
+{"subject": "Thank You for Applying to SpaceX", "snippet": "Thank you for your interest in the HR Coordinator role at Palantir. After careful consideration...", "label": "rejection"}
+{"subject": "Excited to Extend an Offer for Machine Learning Engineer", "snippet": "Hi Taylor, We're thrilled to offer you the Senior Backend Engineer position...", "label": "offer"}
+{"subject": "Your Job Offer from EduInnovate", "snippet": "Hi Alex, We're thrilled to offer you the Machine Learning Engineer position...", "label": "offer"}
+{"subject": "Confirmation: Your Submission to Amazon", "snippet": "Thank you for applying to the Machine Learning Engineer position at Global Finance Ltd. Your applica...", "label": "application_confirmation"}
+{"subject": "Thank You for Applying to Amazon", "snippet": "Thank you for your interest in the DevOps Engineer role at SpaceX. After careful consideration...", "label": "rejection"}
+{"subject": "Confirmation: Your Submission to Airbnb", "snippet": "Thank you for applying to the Senior Backend Engineer position at TechStart Inc. Your application ha...", "label": "application_confirmation"}
+{"subject": "Excited to Extend an Offer for Software Engineer", "snippet": "Hi Jordan, We're thrilled to offer you the UX Designer position...", "label": "offer"}
+{"subject": "Thank You for Applying to EduInnovate", "snippet": "Thank you for your interest in the Software Engineer role at Palantir. After careful consideration.....", "label": "rejection"}
+{"subject": "Application Received - Senior Backend Engineer", "snippet": "Thank you for applying to the DevOps Engineer position at Apple. Your application has been received....", "label": "application_confirmation"}
+{"subject": "Excited to Extend an Offer for Executive Assistant", "snippet": "Hi Taylor, We're thrilled to offer you the Intern position...", "label": "offer"}
+{"subject": "Thank You for Applying to IBM", "snippet": "Thank you for your interest in the Marketing Specialist role at GovTech Agency. After careful consid...", "label": "rejection"}
+{"subject": "Offer Details - Sales Representative Role", "snippet": "Hi Sam, We're thrilled to offer you the HR Coordinator position...", "label": "offer"}
+{"subject": "Update on Your Application for Product Manager", "snippet": "Thank you for your interest in the UX Designer role at Oracle. After careful consideration...", "label": "rejection"}
+{"subject": "Application Received - Sales Representative", "snippet": "Thank you for applying to the Data Scientist position at Amazon. Your application has been received....", "label": "application_confirmation"}
+{"subject": "Confirmation: Your Submission to Snowflake", "snippet": "Thank you for applying to the Data Scientist position at Global Finance Ltd. Your application has be...", "label": "application_confirmation"}
+{"subject": "Confirmation: Your Submission to SpaceX", "snippet": "Thank you for applying to the Product Manager position at Acme Corp. Your application has been recei...", "label": "application_confirmation"}
+{"subject": "Congratulations! Your Offer for Intern at Airbnb", "snippet": "Hi Alex, We're thrilled to offer you the Sales Representative position...", "label": "offer"}
+{"subject": "Thank You for Applying to Acme Corp", "snippet": "Thank you for your interest in the HR Coordinator role at Apple. After careful consideration...", "label": "rejection"}
+{"subject": "Confirmation: Your Submission to Salesforce", "snippet": "Thank you for applying to the UX Designer position at Databricks. Your application has been received...", "label": "application_confirmation"}
+{"subject": "Let's Chat: Phone Screen for Software Engineer", "snippet": "Hi there, We'd like to schedule a 30-minute phone screen with the hiring manager for the Senior Back...", "label": "interview_request"}
+{"subject": "Offer Details - HR Coordinator Role", "snippet": "Hi Alex, We're thrilled to offer you the Product Manager position...", "label": "offer"}
+{"subject": "Thank You for Applying to TechStart Inc", "snippet": "Thank you for your interest in the Senior Backend Engineer role at Microsoft. After careful consider...", "label": "rejection"}

@@ -1,5 +1,5 @@
 import type { JobEmail } from '../types'
-import { classifyEmail } from './classifier'
+import { classifyWithAI } from './ai-classifier'
 import { getSettings } from './storage'
 import { dbg, dbgError } from './debug'
 
@@ -273,10 +273,7 @@ async function fetchMessageDetails(
       const subject = subjectHeader?.value || ''
       const snippet = detail.snippet || ''
 
-      const category = classifyEmail(subject, snippet)
-
-      // Skip emails that don't match any job category
-      if (category === 'other') continue
+      const category = await classifyWithAI(subject, snippet)
 
       emails.push({
         id: detail.id,

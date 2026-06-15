@@ -2,9 +2,9 @@
 
 ## Core Entities
 
-**Job Email** -- A single Gmail message (not thread) that has been classified as job-search-related via keyword matching on subject and snippet. Tracked by Gmail message ID. The unit of classification, display, and "seen" tracking. Can come from any sender — not limited to known ATS domains.
+**Job Email** -- A single Gmail message (not thread) that has been classified as job-search-related. Tracked by Gmail message ID. The unit of classification, display, and "seen" tracking. Can come from any sender — not limited to known ATS domains.
 
-**Category** -- The classification label assigned to a Job Email. One of: `interview_request`, `offer`, `rejection`, `application_confirmation`, `other`. Applied by the Classification Engine using priority order: Offer > Interview Request > Rejection > Application Confirmation > Other.
+**Category** -- The classification label assigned to a Job Email. One of: `interview_request`, `offer`, `rejection`, `application_confirmation`, `other`. Applied by the Classification Engine: AI model (primary, via Transformers.js in offscreen document), keyword matching (fallback when AI confidence is between 0.4–0.7), or defaulted to `other` (when AI confidence is below 0.4). All five categories are displayed in the UI.
 
 **Custom Domain** -- A sender domain added by the user in settings (e.g., a specific recruiter's company domain). Included as an additional `from:` filter in Gmail queries alongside keyword-based search, broadening coverage.
 

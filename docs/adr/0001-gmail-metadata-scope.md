@@ -1,8 +1,8 @@
-# ADR 0001: Use gmail.metadata scope over gmail.readonly
+# ADR 0001: Gmail API scope selection
 
 ## Status
 
-Accepted
+Superseded -- originally chose `gmail.metadata`, switched to `gmail.readonly` during Phase 1.
 
 ## Context
 
@@ -13,11 +13,12 @@ Job Radar needs Gmail API access to fetch email headers and classify them. Two s
 
 ## Decision
 
-Use `gmail.metadata` for v1.
+Originally chose `gmail.metadata` for v1. However, `gmail.metadata` does not permit `messages.list` API calls, which are required for the sync engine. Switched to `gmail.readonly`.
+
+Despite using `gmail.readonly`, the extension still only fetches `format=metadata` (headers + snippet). No email body content is read or stored.
 
 ## Consequences
 
-- Classification runs against subject + snippet only. No full-body keyword matching.
-- Snippet (~100 chars) captures most classification signals ("unfortunately we have decided...", "we'd like to schedule..."). Subject alone would miss many signals since ATS emails often use generic subjects.
-- Avoids the sensitive scope security assessment, unblocking Chrome Web Store submission.
-- If classification accuracy proves insufficient in dogfooding, upgrading to `gmail.readonly` is possible but requires the security assessment before public release.
+- `gmail.readonly` scope requires CASA Tier 2 security assessment for Chrome Web Store public release.
+- Classification still runs against subject + snippet only -- the broader scope is needed for API access, not for reading body content.
+- Privacy posture is unchanged in practice: no email body is fetched or stored.

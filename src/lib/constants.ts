@@ -77,7 +77,7 @@ export const CATEGORY_PRIORITY: EmailCategory[] = [
 
 export const DEFAULT_SETTINGS: Settings = {
   syncIntervalMinutes: 15,
-  enabledCategories: ['interview_request', 'offer', 'rejection', 'application_confirmation'],
+  enabledCategories: ['interview_request', 'offer', 'rejection', 'application_confirmation', 'other'],
   customDomains: [],
 }
 

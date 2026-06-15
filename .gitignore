@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Python / ML
+.venv
+models/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
